@@ -282,6 +282,7 @@ namespace Assistant
 
         public bool AllowBit(int bit)
         {
+            return true; //allow everything...
             // ENABLE IT ONLY FOR DEBUG
             if (File.Exists(Path.Combine(Assistant.Engine.RootPath, "bypassnegotiate")))
                 return true;
